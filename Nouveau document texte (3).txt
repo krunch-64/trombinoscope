@@ -1,0 +1,36 @@
+Trombinoscrope
+
+Page : 	
+	- {header}
+	- accueil {liste des classes (si utilisateur connecté)}
+	- list des class
+	- class
+	- {footer}
+
+
+class USER : 
+	- id
+	- frist_name
+	- last_name
+	- school
+	- img {
+		string : chemin sur la photo 	
+	}
+	- password 
+droit : 
+	- rejoindre une salle 
+	- liste des classe
+	- modifier son USER 
+
+extend ADMIN :
+	
+
+droit : 
+	- rejoindre une salle 
+	- liste des utlisisateurs 
+	- crée une classe 
+	- modifier une class
+	- suprimé une Class
+	- crée un USER 
+	- modifier un USER 
+	- suprimé un USER 
