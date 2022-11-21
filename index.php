@@ -1,6 +1,11 @@
 <?php 
 require_once('./Views/inc/header.php');
-require_once('./views/main.php');
+
+
+include_once('./Views/list.php');
+
+
+
 require_once('./Views/inc/footer.php');
 
 
