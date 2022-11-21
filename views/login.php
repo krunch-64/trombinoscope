@@ -1,5 +1,5 @@
 <?php 
-
+require_once('../Models/model_login.php');
 
 
 
@@ -9,4 +9,6 @@
     <input type="text" name="first_name">
     <label>Password</label> 
     <input type="password" name="password">
+    <input type="submit">
+    <a href="../Views/register.php">S'inscrire</a>
 </form>
