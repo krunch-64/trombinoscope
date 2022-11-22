@@ -1,4 +1,6 @@
 <?php
+include_once('./views/register.php');
+
 /** check_password
  * @param string $pws1
  * @param string $pws2

@@ -1,11 +1,38 @@
 <?php 
-require_once('./Views/inc/header.php');
+
+require_once('views/inc/header.php');
+
+if (!isset($_GET['action'])) 
+{
+    $action = '';
+}
+else 
+{
+    $action = $_GET['action'];
+
+}
+switch($action){
+    case 'homepage': {
+        include_once('controler/controler_home.php');break;
+    }
+    case 'trombi': {
+        include_once('controler/controler_trombi.php');break;
+    }
+    case 'register': {
+        include_once('controler/controler_register.php');break;
+    }
+    case 'login': {
+        include_once('controler/controler_login.php');break;
+    }
+    default : {
+        include_once('views/home.php');break;
+    }
+}
 
 
-include_once('./Views/list.php');
 
 
+require_once('./views/inc/footer.php');
 
-require_once('./Views/inc/footer.php');
 
-
+?>

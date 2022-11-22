@@ -1,5 +1,7 @@
 <?php 
 
+include_once('./views/login.php');
+
 function check_submit($name,$password) 
 {
 

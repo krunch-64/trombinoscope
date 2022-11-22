@@ -1,5 +1,5 @@
 <?php
-require_once('../Models/model_register.php');
+require_once('models/model_register.php');
 
 ?>
 

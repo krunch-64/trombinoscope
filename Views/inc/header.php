@@ -16,9 +16,9 @@ if (isset($_SESSION['start'])){$show_login = false;}
 </head>
   <body>
     <header class="d-flex justify-content-center">
-      <h1>Trombinoscope </h1>
+     <h1 href="../home.php?action=homepage">Trombinoscope </h1>
       <?php if ($show_login) :?>
-      <a href="../Views/login.php">connection</a>
+      <a href="../../index.php?action=login ">connection</a>
       <?php endif; ?>
     </header>
 
