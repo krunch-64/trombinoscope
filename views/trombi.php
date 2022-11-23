@@ -1,5 +1,7 @@
 <?php 
-
+require_once('./models/model_trombi.php');
+$all_trombi = get_all_trombi(); 
+var_dump($all_trombi);
 ?>
 
 <main class="container ">
@@ -11,23 +13,6 @@
                 <h4>boby</h4>
             </div>
         </li>
-        <li class="card"style="">
-            <img class="card-img-top" src="../Assets/img/1663964791507.jpg">
-            <div class="card-body text-center">
-                <h4>boby</h4>
-            </div>
-        </li>
-        <li class="card"style="">
-            <img class="card-img-top" src="../Assets/img/1663964791507.jpg">
-            <div class="card-body text-center">
-                <h4>boby</h4>
-            </div>
-        </li>
-        <li class="card"style="">
-            <img class="card-img-top" src="../Assets/img/1663964791507.jpg">
-            <div class="card-body text-center">
-                <h4>boby</h4>
-            </div>
         </li>
     </ul>
 </main>

@@ -1,2 +1,2 @@
 <?php
-include_once('views/list.php');
+include_once('./views/trombi.php');
