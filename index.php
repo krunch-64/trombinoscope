@@ -24,6 +24,15 @@ switch($action){
     case 'login': {
         include_once('controler/controler_login.php');break;
     }
+    case 'join': {
+        include_once('controler/controler_join.php');break;
+    }
+    case 'list': {
+        include_once('controler/controler_list.php');break;
+    }
+    case 'setting': {
+        include_once('controler/controler_setting');break;
+    }
     default : {
         include_once('views/home.php');break;
     }

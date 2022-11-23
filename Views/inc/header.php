@@ -11,14 +11,16 @@ if (isset($_SESSION['start'])){$show_login = false;}
     <!-- Ajout du boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../../Assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
     <title>Trombinoscope</title>
 </head>
   <body>
-    <header class="d-flex justify-content-center">
+    <header>
      <h1 href="../home.php?action=homepage">Trombinoscope </h1>
-      <?php if ($show_login) :?>
-      <a href="../../index.php?action=login ">connection</a>
-      <?php endif; ?>
+     <nav class="nav">
+        <?php if ($show_login) :?>
+        <a href="../../index.php?action=login ">connection</a>
+        <?php endif; ?>
+      </nav>
     </header>
 
