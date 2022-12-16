@@ -14,7 +14,7 @@ if (isset($_POST['new_first_name'])&&isset($_POST['new_password'])&&isset($_POST
 
 function add_user(string $first_name,string $last_name,string $password) 
 {
-    echo $password;
+    
     $db = db_connect();
 
     $sql = <<<EOD
