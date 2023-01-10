@@ -59,6 +59,29 @@ private function hash_password($password,$password_confirm)
     else{ $this->password = 'error';}
 }
 
+public function update_user()
+{
+
+    $db = db_connect();
+    
+    $sql = "UPDATE `users` SET `username`= :username,`admin` =:admin,`password`=:password "; 
+    $update_user = $db->prepare($sql);
+    $update_user->bindValue(':username',$this->getUserName());
+    $update_user->bindValue(':admin',$this->getisAdmin());
+    $update_user->bindValue(':password',$this->getPassword());
+    $update_user->execute();
+}
+
+public function delete_user(int $id)
+{
+    $db = db_connect();
+    $sql = "DELETE FROM `users` WHERE id = ':id'";
+    $deleteuser = $db->prepare($sql);
+    $deleteuser->bindValue(':id',$id);
+    $deleteuser->execute();
+}
+
+
 /*--------------------------------------------------------------------------------------
 SETTER
 --------------------------------------------------------------------------------------*/
@@ -69,7 +92,7 @@ public function  setUserName($userName): self
 
 public function setisAdmin($isAdmin) : bool
 {
-    return $this->isAdimin = $isAdmin;
+    return $this->isAdmin = $isAdmin;
 }
 
 public function setPassword($password) : self
