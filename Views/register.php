@@ -4,10 +4,8 @@ require_once('models/model_register.php');
 ?>
 
 <form method="POST" action="">
-    <label>First name</label>
-    <input type="text" name="new_first_name">
-    <label>Last name</label>
-    <input type="text" name="new_last_name">
+    <label>Username</label>
+    <input type="text" name="new_username">
     <label>Password</label> 
     <input type="password" name="new_password">
     <label>confirm password</label> 

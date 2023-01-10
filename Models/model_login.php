@@ -21,20 +21,6 @@ function check_password(string $password)
 <?php 
 
 
-// function check_password() {
-//     $users[0] = get_all_user();
-//     foreach($users as $user) {   
-
-//        var_dump($user) ;
-       
-//         if (password_verify($_POST['password'],$user['password'])) {
-//             start_session();
-//             $_SESSION['id'] = $user['first_name']; 
-//             echo'connecté';
-//             header('Location:../index.php?action=list');
-//         }
-//     }
-//}
 
 ?>
 
